@@ -1,4 +1,4 @@
-import { defineConfig } from "eslint/config";
+import { defineConfig, globalIgnores } from "eslint/config";
 import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import react from "eslint-plugin-react";
 import _import from "eslint-plugin-import";
@@ -19,7 +19,8 @@ const compat = new FlatCompat({
     allConfig: js.configs.all
 });
 
-export default defineConfig([{
+export default defineConfig([
+    globalIgnores(["*.config.mjs", "webpack.config.js", "**/*.d.ts"]), {
     extends: compat.extends(
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
@@ -52,7 +53,6 @@ export default defineConfig([{
             },
         },
     },
-
     settings: {
         "import/resolver": {
             node: {
@@ -230,6 +230,5 @@ export default defineConfig([{
         "react/jsx-closing-bracket-location": ["error", "line-aligned"],
         "react/prop-types": "off",
         '@stylistic/semi': 'error',
-        '@stylistic/jsx-indent': 'error',
     },
 }]);

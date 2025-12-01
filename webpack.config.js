@@ -10,14 +10,14 @@ module.exports = (env) => {
   const DEBUG = env.mode === 'development';
 
   return {
-    entry: path.resolve(SRC_PATH, 'index.tsx'), 
+    entry: path.resolve(SRC_PATH, 'index.tsx'),
 
     output: {
       filename: 'bundle.js',
       path: BUILD_PATH,
     },
 
-    devtool: 'inline-source-map', 
+    devtool: 'inline-source-map',
 
     module: {
       rules: [
@@ -26,14 +26,28 @@ module.exports = (env) => {
           use: 'ts-loader',
           exclude: /node_modules/,
         },
+        {
+            test: /\.css$/,
+            use: [
+            'style-loader',
+            {
+                loader: 'css-loader',
+                options: {
+                modules: {
+                    namedExport: false,
+                },
+                },
+            },
+            ],
+        },
       ],
     },
 
     resolve: {
-      extensions: ['.tsx', '.ts', '.js'],
+      extensions: ['.tsx', '.ts', '.js', '.css'],
     },
 
-    plugins: DEBUG 
+    plugins: DEBUG
       ? []
       : [
         new CopyPlugin({
