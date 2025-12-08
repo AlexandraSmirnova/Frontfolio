@@ -5,11 +5,15 @@ import { MySkills } from './sections/MySkills';
 import { About } from './sections/About';
 import { Portfolio } from './sections/Portfolio';
 import { Contacts } from './sections/Contacts';
+import { Header } from './Header';
+import './variables.css';
+import './base.css';
+
 
 export const App: React.FC = () => {
     return (
         <div>
-            <h1>Welcome to my app</h1>
+            <Header />
             <Hello />
             <MySkills />
             <About />

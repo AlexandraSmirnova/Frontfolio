@@ -1,0 +1,14 @@
+:root {
+    --color-primary: #4d1563;
+    --color-secondary: #b37bc9;
+    --color-accent: #7d3e96;
+    --color-dark-accent: #290239;
+    --color-light-accent: #fcfafc;
+
+    --section-height: 750px;
+
+    --font-size-xl: 38px;
+    --font-size-l: 32px;
+    --font-size-m: 28px;
+    --font-size-s: 24px;
+}

@@ -1,0 +1,8 @@
+.headerTab {
+    display: inline-block;
+    color: var(--color-light-accent);
+    padding: 8px 15px;
+    height: 48px;
+    font-size: var(--font-size-s);
+    font-weight: 400;
+}
