@@ -9,10 +9,16 @@
     display: flex;
     gap: 44px;
     align-items: center;
+    justify-content: space-between;
     padding: 0 76px;
     background-color: var(--color-accent);
     width: calc(100% - 2 * 60px);
     height: 60px;
     border-radius: 0 0 22px 22px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.tabs {
+    display: flex;
+    gap: 44px;
 }
