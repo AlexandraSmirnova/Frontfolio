@@ -11,4 +11,7 @@
     --font-size-l: 32px;
     --font-size-m: 28px;
     --font-size-s: 24px;
+
+    --z-index-20: 20;
+    --z-index-10: 10;
 }

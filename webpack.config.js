@@ -40,6 +40,14 @@ module.exports = (env) => {
             },
             ],
         },
+         {
+            test: /\.(png|jpg|jpeg|gif)$/i,
+            type: 'asset/resource', // This tells webpack to treat these files as assets
+            generator: {
+            // Optional: Customize the output filename and path
+            filename: 'images/[name].[hash:8][ext]',
+            },
+        },
         {
             test: /\.svg$/,
             use: ['@svgr/webpack'],
