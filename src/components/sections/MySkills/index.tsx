@@ -8,8 +8,7 @@ import { SkillsBubbles } from '../../SkillsBubbles';
 export const MySkills: React.FC = () => {
     return (
         <div className={styles.container}>
-            <Title text={'Мои навыки'}/>
-
+            <Title text={'> Мои навыки'}/>
             <SkillsBubbles skills={skillsJson.skills} />
         </div>
     );
