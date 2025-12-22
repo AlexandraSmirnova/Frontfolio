@@ -1,0 +1,55 @@
+.container {
+    color: var(--color-light-accent);
+    border-radius: 50%;
+    border: 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small {
+    width: 120px;
+    height: 120px;
+    font-size: var(--font-size-s);
+    grid-area: span 4 / span 4;
+}
+
+.middle {
+    width: 150px;
+    height: 150px;
+    font-size: var(--font-size-s);
+    grid-area: span 5 / span 5;
+}
+
+.large {
+    width: 180px;
+    height: 180px;
+    font-size: var(--font-size-m);
+    grid-area: span 6 / span 6;
+}
+
+.xlarge {
+    width: 210px;
+    height: 210px;
+    font-size: var(--font-size-m);
+    grid-area: span 7 / span 7;
+}
+
+.empty {
+        width: 60px;
+    height: 60px;
+    grid-area: span 2 / span 2;
+    visibility: hidden;
+}
+
+.light {
+    background-color: var(--color-light-accent);
+    color: var(--color-dark-accent);
+    border-color: var(--color-secondary);
+}
+
+.dark {
+    background-color: var(--color-secondary);
+    color: var(--color-light-accent);
+    border-color: var(--color-light-secondary);
+}

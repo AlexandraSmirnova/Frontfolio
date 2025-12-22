@@ -1,0 +1,5 @@
+.title {
+    color: var(--color-light-accent);
+    font-size: var(--font-size-l);
+    margin-left: 10%;
+}
