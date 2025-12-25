@@ -1,0 +1,11 @@
+{
+    "projects": [
+        {"name": "Project 1", "description": "Lorem dfdfdf", "image": ""},
+        {"name": "OK Tiles", "description": "Страница с тайлами для ОК браузера", "image": "ok-tiles.png"},
+        {"name": "Project 3", "description": "Lorem dfdfdf", "image": ""},
+        {"name": "Project 4", "description": "Lorem dfdfdf", "image": ""},
+        {"name": "Project 5", "description": "Lorem dfdfdf", "image": ""},
+        {"name": "Project 6", "description": "Lorem dfdfdf", "image": ""},
+        {"name": "Project 7", "description": "Lorem dfdfdf", "image": ""}
+    ]
+}

@@ -167,7 +167,6 @@ export default defineConfig([
         "no-useless-concat": "error",
         "no-useless-return": "error",
         "no-void": "error",
-
         "prefer-promise-reject-errors": ["error", {
             allowEmptyReject: true,
         }],
@@ -197,7 +196,7 @@ export default defineConfig([
             optionalDependencies: false,
         }],
 
-        "import/extensions": ["error", "always", {
+        "import/extensions": ["error", "ignorePackages", {
             js: "never",
             ts: "never",
             tsx: "never",

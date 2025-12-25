@@ -1,0 +1,10 @@
+.sliderContainer {
+    --padding: 20px;
+
+    min-height: 0;
+    min-width: 0;
+    max-width: 1400px;
+    width:calc(100% - var(--padding) * 2);
+    padding: 60px var(--padding);
+    margin: auto;
+}

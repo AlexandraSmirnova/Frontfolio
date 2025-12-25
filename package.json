@@ -36,6 +36,7 @@
     "@svgr/webpack": "^8.1.0",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
+    "@types/react-slick": "^0.23.13",
     "@typescript-eslint/eslint-plugin": "^8.46.4",
     "@typescript-eslint/parser": "^8.46.4",
     "copy-webpack-plugin": "^13.0.1",
@@ -54,7 +55,9 @@
   "dependencies": {
     "classnames": "^2.5.1",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-slick": "^0.31.0",
+    "slick-carousel": "^1.8.1"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
