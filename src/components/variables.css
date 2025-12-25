@@ -15,4 +15,9 @@
 
     --z-index-20: 20;
     --z-index-10: 10;
+
+    /* Основные брейкпоинты в приложении */
+    --breakpoint-l: 1280px;
+    --breakpoint-m: 1024px;
+    --breakpoint-s: 600px;
 }

@@ -7,7 +7,7 @@ import styles from './styles.css';
 import { IconBox } from '../IconBox';
 
 
-export const IconsBar: React.FC = () => {
+export const ContactIconsBar: React.FC = () => {
     return (
         <div className={styles.container}>
             <IconBox icon={<VK width="32" height="32" />} />

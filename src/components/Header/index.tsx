@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './styles.css';
 import { HeaderTab } from '../HeaderTab';
-import { IconsBar } from '../IconsBar';
+import { ContactIconsBar } from '../ContactIconsBar';
 
 export const Header: React.FC = () => {
     return (
@@ -14,7 +14,7 @@ export const Header: React.FC = () => {
                     <HeaderTab text="Портфолио" onClick={() => {}}/>
                     <HeaderTab text="Контакты" onClick={() => {}}/>
                 </div>
-                <IconsBar />
+                <ContactIconsBar />
             </div>
         </div>
     );
