@@ -6,3 +6,7 @@
     font-size: var(--font-size-s);
     font-weight: 400;
 }
+
+.headerTab:hover {
+    opacity: 0.8;
+}

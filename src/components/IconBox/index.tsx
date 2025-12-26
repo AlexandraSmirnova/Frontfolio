@@ -3,7 +3,7 @@ import classnames from 'classnames';
 
 import styles from './styles.css';
 
-interface IconBoxProps {
+interface IconBoxProps extends React.HTMLProps<HTMLDivElement> {
     icon: React.ReactElement;
     className?: string;
 }

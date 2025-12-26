@@ -7,13 +7,13 @@ import { Portfolio } from './sections/Portfolio';
 import { Contacts } from './sections/Contacts';
 import { Header } from './Header';
 import './variables.css';
-import './base.css';
+import styles from './base.css';
 import { Photo } from './sections/Photo';
 
 
 export const App: React.FC = () => {
     return (
-        <div>
+        <div className={styles.main}>
             <Header />
             <Hello />
             <MySkills />

@@ -5,7 +5,7 @@ import styles from './styles.css';
 
 export const Hello: React.FC = () => {
     return (
-        <div className={styles.container}>
+        <section className={styles.container}>
             <div className={styles.innerContainer}>
                 <h1 className={styles.title}>
                     {'>'} Привет! <br/>
@@ -15,6 +15,6 @@ export const Hello: React.FC = () => {
 
                 <div className={styles.photo}/>
             </div>
-        </div>
+        </section>
     );
 };

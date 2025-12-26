@@ -5,6 +5,10 @@
     font-family: "Martian Mono", monospace;
 }
 
+html, body {
+    overscroll-behavior-y: none;
+}
+
 button {
     padding: 0;
     border: none;
@@ -13,3 +17,16 @@ button {
     background-color: transparent;
     cursor: pointer;
 }
+
+.main {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.main section {
+    scroll-snap-align: start;
+}
+
+

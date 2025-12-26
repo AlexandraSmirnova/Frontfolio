@@ -7,9 +7,9 @@ import { SkillsBubbles } from '../../SkillsBubbles';
 
 export const MySkills: React.FC = () => {
     return (
-        <div className={styles.container}>
+        <section className={styles.container} id="skills">
             <Title text={'> Мои навыки'}/>
             <SkillsBubbles skills={skillsJson.skills} />
-        </div>
+        </section>
     );
 };

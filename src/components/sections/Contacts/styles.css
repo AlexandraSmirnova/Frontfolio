@@ -27,7 +27,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .license {
-    position: initial;
-  }
+    .license {
+        position: initial;
+    }
 }

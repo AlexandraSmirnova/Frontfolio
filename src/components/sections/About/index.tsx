@@ -2,9 +2,10 @@ import React from 'react';
 
 import styles from './styles.css';
 
+
 export const About: React.FC = () => {
     return (
-        <div className={styles.container}>
+        <section className={styles.container} id="about" >
             <div className={styles.innerContainer}>
                 <h1 className={styles.title}>{'>'} О себе</h1>
                 <ul className={styles.description}>
@@ -15,7 +16,7 @@ export const About: React.FC = () => {
                     <li>Praesent hendrerit nisi ac massa bibendum, quis sagittis arcu egestas.</li>
                 </ul>
             </div>
-        </div>
+        </section>
     );
 };
 

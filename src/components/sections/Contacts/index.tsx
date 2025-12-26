@@ -9,7 +9,7 @@ import Mail from './resources/mail.svg';
 
 export const Contacts: React.FC = () => {
     return (
-        <div className={styles.container}>
+        <section className={styles.container} id="contacts">
             <Title text={'> Контакты'}/>
             <div className={styles.content}>
                 <div className={styles.emailContact}>
@@ -19,6 +19,6 @@ export const Contacts: React.FC = () => {
                 <ContactIconsBar />
                 <div className={styles.license}>© 2026 Smirnova Alexandra</div>
             </div>
-        </div>
+        </section>
     );
 };

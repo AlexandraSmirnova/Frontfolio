@@ -9,9 +9,9 @@ import { Title } from '../../Title';
 
 export const Portfolio: React.FC = () => {
     return (
-        <div className={styles.container}>
+        <section className={styles.container} id="portfolio">
             <Title text={'> Портфолио'}/>
             <Slider items={portfolioJson.projects} />
-        </div>
+        </section>
     );
 };
