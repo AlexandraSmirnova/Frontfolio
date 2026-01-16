@@ -1,12 +1,14 @@
 import React from 'react';
 
 import styles from './styles.css';
+import { AnimationProvider } from '../../AnimationProvider';
 
 
 export const About: React.FC = () => {
     return (
         <section className={styles.container} id="about" >
-            <div className={styles.innerContainer}>
+
+            <AnimationProvider className={styles.innerContainer}>
                 <h1 className={styles.title}>{'>'} О себе</h1>
                 <ul className={styles.description}>
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -15,7 +17,7 @@ export const About: React.FC = () => {
                     <li>Suspendisse dapibus diam vel efficitur scelerisque.</li>
                     <li>Praesent hendrerit nisi ac massa bibendum, quis sagittis arcu egestas.</li>
                 </ul>
-            </div>
+            </AnimationProvider>
         </section>
     );
 };

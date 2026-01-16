@@ -9,6 +9,52 @@
     color: var(--color-dark-accent);
     margin-left: 10%;
     z-index: var(--z-index-10);
+    overflow: hidden;
+}
+
+.row {
+    box-sizing: initial;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0ch;
+    will-change: width;
+    border-right: 4px solid transparent;
+    animation: cursor 1s calc(var(--step-count) / 7) step-end, typing var(--duration) forwards steps(var(--step-count));
+}
+
+.row1 {
+    --symbols-count: 9ch;
+    --duration: 0.9s;
+    --step-count: 9;
+}
+
+.row2 {
+    --symbols-count: 32ch;
+    --duration: 3.2s;
+    --step-count: 32;
+    animation-delay: 1.2s;
+}
+
+.row3 {
+    --symbols-count: 26ch;
+    --duration: 2.6s;
+    --step-count: 26;
+    animation-delay: 5s;
+}
+
+@keyframes typing {
+  0% { width: 0ch }
+  100% { width: var(--symbols-count) }
+}
+
+@keyframes cursor {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-dark-accent);
+  }
 }
 
 .innerContainer {
