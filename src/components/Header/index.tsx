@@ -1,16 +1,22 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import styles from './styles.css';
 import { HeaderTab } from '../HeaderTab';
 import { ContactIconsBar } from '../ContactIconsBar';
 
-export const Header: React.FC = () => {
+
+interface HeaderProps {
+    visible: boolean;
+}
+
+export const Header: React.FC<HeaderProps> = ({ visible }) => {
     const getHandleClick = (hash: string) => () => {
         window.location.hash = hash;
     };
 
     return (
-        <div className={styles.container}>
+        <div className={classNames(styles.container, { [styles.hidden]: !visible})}>
             <div className={styles.header}>
                 <div className={styles.tabs}>
                     <HeaderTab text="Навыки" onClick={getHandleClick('skills')}/>

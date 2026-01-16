@@ -12,9 +12,30 @@ import { Photo } from './sections/Photo';
 
 
 export const App: React.FC = () => {
+    const ref = React.useRef<HTMLDivElement>(null);
+    const lastScrollTop = React.useRef<number>(0);
+    const [hideHeader, setHideHeader] = React.useState(false);
+
+    const handleScroll = () => {
+        const scrollTop = window.pageYOffset || ref.current.scrollTop;
+        setHideHeader(scrollTop > lastScrollTop.current && scrollTop > 50);
+        lastScrollTop.current = scrollTop;
+    };
+
+    React.useEffect(() => {
+        if (!ref.current) {
+            return () => {};
+        }
+
+        ref.current.addEventListener('scroll', handleScroll);
+        return () => {
+            ref.current.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <div className={styles.main}>
-            <Header />
+        <div className={styles.main} ref={ref}>
+            <Header visible={!hideHeader}/>
             <Hello />
             <MySkills />
             <About />
