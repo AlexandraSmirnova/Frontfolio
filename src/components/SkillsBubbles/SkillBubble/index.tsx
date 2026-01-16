@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import styles from './styles.css';
+import { AnimationProvider } from '../../AnimationProvider';
 
 
 interface SkillBubbleProps {
@@ -16,10 +17,11 @@ export type SkillBubbleSize = 'small' | 'middle' | 'large' | 'xlarge' | 'empty';
 
 export const SkillBubble: React.FC<SkillBubbleProps> = ({ text, variant = 'dark', size}) => {
     return (
-        <div
+        <AnimationProvider
+            variant='scale'
             className={classNames(styles[variant], styles[size], styles.container)}
         >
             {text}
-        </div>
+        </AnimationProvider>
     );
 };

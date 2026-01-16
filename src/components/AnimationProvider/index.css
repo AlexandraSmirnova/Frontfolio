@@ -9,4 +9,11 @@
   transform: translateY(0);
 }
 
+.scalable {
+    transform: scale(0.2);
+    transition: transform 0.5s ease-out;
+}
 
+.scalable.visible {
+    transform: scale(1);
+}

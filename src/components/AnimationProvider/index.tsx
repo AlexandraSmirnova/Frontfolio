@@ -6,7 +6,7 @@ import styles from './index.css';
 
 
 interface AnimationProviderProps {
-    variant?: 'fadeIn';
+    variant?: 'fadeIn' | 'scale';
     className?: string;
 }
 
@@ -30,7 +30,7 @@ export const AnimationProvider: React.FC<React.PropsWithChildren<AnimationProvid
                     entry.target.classList.remove(styles.visible);
                 }
             });
-        });
+        }, { threshold: 0.8});
 
         observer.observe(ref.current);
 
@@ -45,6 +45,7 @@ export const AnimationProvider: React.FC<React.PropsWithChildren<AnimationProvid
             className={classNames(
                 {
                     [styles.fadeIn]: variant === 'fadeIn',
+                    [styles.scalable]: variant === 'scale',
                 },
                 className
             )}

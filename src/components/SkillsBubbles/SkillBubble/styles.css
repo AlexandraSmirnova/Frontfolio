@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: scalebubble 2s ease-in-out;
 }
 
 .small {
@@ -52,4 +53,16 @@
     background-color: var(--color-secondary);
     color: var(--color-light-accent);
     border-color: var(--color-light-secondary);
+}
+
+@keyframes scalebubble {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
