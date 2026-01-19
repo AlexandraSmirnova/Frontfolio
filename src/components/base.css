@@ -23,6 +23,9 @@ button {
     scroll-behavior: smooth;
     height: 100vh;
     overflow: scroll;
+    background-image: url('../images/photo-background.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .main section {
