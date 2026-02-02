@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Github from './resources/github.svg';
-import VK from './resources/vk.svg';
-import Telegram from './resources/telegram.svg';
+import Github from '../../images/svg/github.svg';
+import VK from '../../images/svg/vk.svg';
+import Telegram from '../../images/svg/telegram.svg';
 import styles from './styles.css';
 import { IconBox } from '../IconBox';
 

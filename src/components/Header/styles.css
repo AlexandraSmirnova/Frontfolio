@@ -1,3 +1,4 @@
+
 .container {
     display: flex;
     position: fixed;
@@ -19,7 +20,7 @@
     padding: 0 76px;
     background-color: var(--color-accent);
     width: calc(100% - 2 * 60px);
-    height: 60px;
+    height: var(--header-height);
     border-radius: 0 0 22px 22px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
@@ -28,3 +29,56 @@
     display: flex;
     gap: 44px;
 }
+
+.burgerButton, .crossIcon {
+    display: none;
+    color: var(--color-light-accent);
+}
+
+@media (max-width: 768px) {
+    .header {
+        width: 100%;
+        border-radius: 0;
+        padding: 0 24px;
+    }
+
+    .burgerButton {
+        display: block;
+    }
+
+    .tabs {
+        position: fixed;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        padding-top: var(--header-height);
+        bottom: 0;
+        background-color: var(--color-accent);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        z-index: var(--z-index-30);
+        transform: translateX(100%); /* Hide off-screen by default */
+        transition: transform 0.5s ease-in;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .crossIcon {
+        display: block;
+        position: absolute;
+        top: 14px;
+        right: 24px;
+    }
+
+    .container.hidden {
+        transform: none;
+    }
+
+    .tabs.active {
+        transform: translateX(0%);
+    }
+}
+
+
+

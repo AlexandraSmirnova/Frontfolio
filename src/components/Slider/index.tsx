@@ -18,6 +18,9 @@ const settings = {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    // centerMode: true,
+    // variableWidth: false,
+    // mobileFirst: true,
     responsive: [
         {
             breakpoint: 1280,

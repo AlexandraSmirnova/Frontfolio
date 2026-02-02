@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import styles from './styles.css';
+import { AnimationProvider } from '../../AnimationProvider';
 
 
 export const Hello: React.FC = () => {
@@ -13,8 +14,7 @@ export const Hello: React.FC = () => {
                     <div className={classNames(styles.row, styles.row2)}>{'>'} Меня зовут Александра Смирнова</div>
                     <div className={classNames(styles.row, styles.row3)}>{'>'} Я - фронтенд-разработчик</div>
                 </h1>
-
-                <div className={styles.photo}/>
+                <AnimationProvider className={styles.photo}/>
             </div>
         </section>
     );

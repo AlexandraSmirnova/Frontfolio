@@ -4,7 +4,7 @@ import styles from './styles.css';
 import { Title } from '../../Title';
 import { ContactIconsBar } from '../../ContactIconsBar';
 import { IconBox } from '../../IconBox';
-import Mail from './resources/mail.svg';
+import Mail from '../../../images/svg/mail.svg';
 import { AnimationProvider } from '../../AnimationProvider';
 
 

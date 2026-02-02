@@ -13,6 +13,7 @@
     --font-size-s: 24px;
     --font-size-xs: 16px;
 
+    --z-index-30: 30;
     --z-index-20: 20;
     --z-index-10: 10;
 
@@ -20,4 +21,6 @@
     --breakpoint-l: 1280px;
     --breakpoint-m: 1024px;
     --breakpoint-s: 600px;
+
+    --header-height: 60px;
 }
