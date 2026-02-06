@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import Github from '../../images/svg/github.svg';
 import VK from '../../images/svg/vk.svg';
@@ -21,13 +22,17 @@ const config = [
     }
 ];
 
-export const ContactIconsBar: React.FC = () => {
+interface ContactIconsBarProps {
+    className?: string;
+}
+
+export const ContactIconsBar: React.FC<ContactIconsBarProps> = ({ className }) => {
     const getHandleClick = (href: string) => () => {
         window.location.href = href;
     };
 
     return (
-        <div className={styles.container}>
+        <div className={classNames(styles.container, className)}>
             {config.map(({ icon, href }) => (
                 <IconBox key={href} icon={icon} onClick={getHandleClick(href)}/>
             ))}

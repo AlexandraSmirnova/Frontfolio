@@ -42,12 +42,12 @@ export const Header: React.FC<HeaderProps> = ({ visible }) => {
                     })}
                 >
                     <HeaderTab text="Навыки" onClick={getHandleClick('skills')}/>
-                    <HeaderTab text="О себе" onClick={getHandleClick('about')}/>
+                    <HeaderTab text="О&nbsp;себе" onClick={getHandleClick('about')}/>
                     <HeaderTab text="Портфолио" onClick={getHandleClick('portfolio')}/>
                     <HeaderTab text="Контакты" onClick={getHandleClick('contacts')}/>
                     <IconBox className={styles.crossIcon} onClick={handleCloseMenu} icon ={<Cross width="32" height="32"/>}/>
                 </div>
-                <ContactIconsBar />
+                <ContactIconsBar className={styles.contacts} />
                 <IconBox className={styles.burgerButton} onClick={handleBurgerButtonClick} icon ={<BurgerMenu width="32" height="32"/>}/>
             </div>
         </div>

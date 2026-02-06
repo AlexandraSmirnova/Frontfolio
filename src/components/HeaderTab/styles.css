@@ -10,3 +10,9 @@
 .headerTab:hover {
     opacity: 0.8;
 }
+
+@media (min-width: 600px) and (max-width: 1032px) {
+    .headerTab {
+        font-size: var(--font-size-xs);
+    }
+}

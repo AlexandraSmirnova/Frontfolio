@@ -1,3 +1,6 @@
+:root {
+    --tabs-gap: 26px;
+}
 
 .container {
     display: flex;
@@ -14,7 +17,7 @@
 
 .header {
     display: flex;
-    gap: 44px;
+    gap: var(--tabs-gap);
     align-items: center;
     justify-content: space-between;
     padding: 0 76px;
@@ -27,7 +30,7 @@
 
 .tabs {
     display: flex;
-    gap: 44px;
+    gap: var(--tabs-gap);
 }
 
 .burgerButton, .crossIcon {
@@ -35,13 +38,7 @@
     color: var(--color-light-accent);
 }
 
-@media (max-width: 768px) {
-    .header {
-        width: 100%;
-        border-radius: 0;
-        padding: 0 24px;
-    }
-
+@media (max-width: 600px) {
     .burgerButton {
         display: block;
     }
@@ -80,5 +77,26 @@
     }
 }
 
+@media (min-width: 600px) and (max-width: 810px) {
+    .header {
+        width: 100%;
+        border-radius: 0;
+        justify-content: center;
+        padding: 0 24px;
+    }
+
+    .contacts {
+        display: none;
+    }
+}
 
 
+@media (max-width: 1032px) {
+    .header {
+        width: 100%;
+        border-radius: 0;
+        padding: 0 24px;
+    }
+
+
+}

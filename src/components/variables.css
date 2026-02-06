@@ -19,7 +19,7 @@
 
     /* Основные брейкпоинты в приложении */
     --breakpoint-l: 1280px;
-    --breakpoint-m: 1024px;
+    --breakpoint-m: 1032px;
     --breakpoint-s: 600px;
 
     --header-height: 60px;
