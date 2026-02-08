@@ -18,21 +18,20 @@ const sizeByLevel: Record<number, SkillBubbleSize> = {
 };
 
 export const SkillsBubbles: React.FC<SkillsBubblesProps> = ({ skills }) => {
-    const emptyBubble = <SkillBubble size={'empty'}/>;
+    const emptyBubble = <SkillBubble size={'empty'} />;
     return (
         <div className={styles.container}>
 
             {skills.map(({ name, level }, index) => {
                 return (
-                    <>
+                    <React.Fragment key={`${name}-${level}`}>
                         {index % 2 === 0 && emptyBubble}
                         <SkillBubble
                             variant={index % 2 === 0 ? 'dark' : 'light'}
                             size={sizeByLevel[level]}
-                            key={name}
                             text={name}
                         />
-                    </>
+                    </React.Fragment>
                 );
             })}
         </div>

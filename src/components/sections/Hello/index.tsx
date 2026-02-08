@@ -2,14 +2,27 @@ import React from 'react';
 
 import styles from './styles.css';
 import { AnimationProvider } from '../../AnimationProvider';
-import { BREAKPOINT_S } from '../../../utils/constants';
+import { BREAKPOINT_M } from '../../../utils/constants';
 
 
 export const Hello: React.FC = () => {
-    const rows = window.innerWidth > BREAKPOINT_S
+    let delay = 0;
+    const getRows = () => window.innerWidth > BREAKPOINT_M
         ? ['Привет!', 'Меня зовут Александра Смирнова', 'Я — Фронтенд-разработчик']
         : ['Привет!', 'Меня зовут', 'Александра Смирнова', 'Я Фронтенд-разработчик'];
-    let delay = 0;
+    const [rows, setRows] = React.useState(getRows());
+
+    const handleResize = () => {
+        setRows(getRows());
+    };
+
+    React.useEffect(() => {
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     return (
         <section className={styles.container}>
@@ -21,7 +34,7 @@ export const Hello: React.FC = () => {
                             '--symbols-count': `${symbols}ch`,
                             '--duration': `${symbols / 10}s`,
                             '--step-count': symbols,
-                            'animation-delay': index === 0 ? 0 :`${delay}s`,
+                            'animationDelay': index === 0 ? 0 :`${delay}s`,
                         } as React.CSSProperties;
                         delay += symbols / 10;
 

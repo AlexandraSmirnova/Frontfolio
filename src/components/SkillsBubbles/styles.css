@@ -1,3 +1,6 @@
+:root {
+    --grid-cell: 30px
+}
 .container {
     width: 80%;
     margin: auto;
@@ -8,5 +11,17 @@
     grid-auto-flow: dense;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(var(--grid-cell), 1fr));
+}
+
+@media (min-width: 600px) and (max-width: 1032px) {
+    :root {
+        --grid-cell: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --grid-cell: 20px;
+    }
 }

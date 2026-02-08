@@ -15,11 +15,12 @@ interface SkillBubbleProps {
 export type SkillBubbleVariant = 'dark' | 'light';
 export type SkillBubbleSize = 'small' | 'middle' | 'large' | 'xlarge' | 'empty';
 
-export const SkillBubble: React.FC<SkillBubbleProps> = ({ text, variant = 'dark', size}) => {
+export const SkillBubble: React.FC<SkillBubbleProps> = ({ text, variant = 'dark', size, ...props}) => {
     return (
         <AnimationProvider
             variant='scale'
             className={classNames(styles[variant], styles[size], styles.container)}
+            {...props}
         >
             {text}
         </AnimationProvider>

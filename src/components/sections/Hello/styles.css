@@ -67,6 +67,10 @@
     .photo {
         --max-opacity: 0.7;
     }
+
+    .title {
+        font-size: var(--font-size-l);
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -80,9 +84,9 @@
     }
 
     .photo {
-        width: calc(423px * 0.8);
+        --width: calc(423px * 0.8);
+        width: var(--width);
         height: calc(612px * 0.8);
-        right: initial;
-        margin: 0 auto;
+        right: calc((100% - var(--width)) / 2);
     }
 }

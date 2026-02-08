@@ -1,6 +1,6 @@
 .container {
     background-color: var(--color-accent);
-    height: 530px;
+    min-height: 530px;
     padding: 80px 0;
 }
 
