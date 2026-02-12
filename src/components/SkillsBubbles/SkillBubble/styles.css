@@ -2,6 +2,7 @@
     color: var(--color-light-accent);
     border-radius: 50%;
     border: 2px solid;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;

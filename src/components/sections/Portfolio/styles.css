@@ -2,6 +2,6 @@
     display: flex;
     flex-direction: column;
     background-color: var(--color-dark-accent);
-    height: var(--section-height);
+    min-height: 650px;
     padding-top: 60px;
 }

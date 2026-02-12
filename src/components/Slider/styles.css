@@ -1,12 +1,49 @@
 .sliderContainer {
     --padding: 20px;
 
-    min-height: 0;
-    min-width: 0;
     max-width: 1400px;
     width: calc(100% - var(--padding) * 2);
     padding: 60px var(--padding);
     margin: auto;
+}
+
+.dots {
+    position: absolute;
+    bottom: -10px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.dots li button {
+    width: 10px;
+    height: 10px;
+    background-color: var( --color-light-accent);
+    border: 0;
+    border-radius: 50%;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.dots li button:hover {
+    opacity: 0.8;
+}
+
+.dots :global(li.slick-active) button {
+    transform: scale(1.2);
 }
 
 @media screen and (max-width: 1280px) {

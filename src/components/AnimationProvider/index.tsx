@@ -30,7 +30,7 @@ export const AnimationProvider: React.FC<React.PropsWithChildren<AnimationProvid
                     entry.target.classList.remove(styles.visible);
                 }
             });
-        }, { threshold: 0.8});
+        }, { threshold: 0.7});
 
         observer.observe(ref.current);
 
