@@ -21,9 +21,15 @@
     position: absolute;
     bottom: 0;
     padding: 16px;
-    font-size: var(--font-size-x\s);
+    font-size: var(--font-size-xs);
 }
 
 .description {
     font-size: var(--font-size-xs);
+}
+
+@media screen and (max-width: 780px) {
+    .slide {
+        width: 100%;
+    }
 }
