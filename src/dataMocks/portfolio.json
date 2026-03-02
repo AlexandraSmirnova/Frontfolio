@@ -1,11 +1,11 @@
 {
     "projects": [
-        {"name": "Project 1", "description": "Lorem dfdfdf", "image": ""},
+        {"name": "Работа в B2B-Календаре", "description": "Разработка режима Неделя для мобильной версии", "image": "week.png", "isContainBackground": true},
+        {"name": "Работа в браузере Атом", "description": "Расширение новой вкладки в браузере Атом", "image": "ntp.png"},
+        {"name": "Расширения для браузера Atom", "description": "Расширение ВК-уведомлений для браузера Атом", "image": "notify.png", "isContainBackground": true},
         {"name": "OK Tiles", "description": "Страница с тайлами для ОК браузера", "image": "ok-tiles.png"},
-        {"name": "Project 3", "description": "Lorem dfdfdf", "image": ""},
-        {"name": "Project 4", "description": "Lorem dfdfdf", "image": ""},
-        {"name": "Project 5", "description": "Lorem dfdfdf", "image": ""},
-        {"name": "Project 6", "description": "Lorem dfdfdf", "image": ""},
-        {"name": "Project 7", "description": "Lorem dfdfdf", "image": ""}
+        {"name": "Highloadcup", "description": "Редизайн сайта чемпионата highloadcup", "image": "highloadcup.png"},
+        {"name": "Технокубок", "description": "Первая версия сайта соревнования для школьников", "image": "technocup.png"},
+        {"name": "MLBootCamp", "description": "Сайт соревнования по машинному обучению", "image": "mlbootcamp.png"}
     ]
 }

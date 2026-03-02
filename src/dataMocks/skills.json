@@ -1,16 +1,17 @@
 {
     "skills": [
-        { "name": "Навык 1", "level": 1 },
-        { "name": "Навык 2", "level": 2 },
-        { "name": "Навык 3", "level": 3 },
-        { "name": "Навык 4", "level": 1 },
-        { "name": "Навык 5", "level": 4 },
-        { "name": "Навык 6", "level": 1 },
-        { "name": "Навык 7", "level": 2 },
-        { "name": "Навык 8", "level": 3 },
-        { "name": "Навык 9", "level": 1 },
-        { "name": "Навык 10", "level": 2 },
-        { "name": "Навык 11", "level": 2 },
-        { "name": "Навык 12", "level": 1 }
+        { "name": "Figma", "level": 1 },
+        { "name": "Webpack", "level": 1 },
+        { "name": "JS / TS", "level": 4 },
+        { "name": "React", "level": 3 },
+        { "name": "CSS3", "level": 3 },
+        { "name": "Eslint", "level": 2 },
+        { "name": "HTML5", "level": 3 },
+        { "name": "Git", "level": 2 },
+        { "name": "Chrome DevTools", "level": 2 },
+        { "name": "REST API", "level": 2 },
+        { "name": "Node.js", "level": 1 },
+        { "name": "Redux", "level": 1 }
     ]
 }
+

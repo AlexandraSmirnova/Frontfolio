@@ -1,7 +1,7 @@
 
 .slide {
     position: relative;
-    background-color: var(--color-light-accent);
+    background-color: var(--color-secondary);
     background-size: cover;
     background-position: center;
     width: 300px;
@@ -9,6 +9,11 @@
     border-radius: 22px;
     overflow: hidden;
     color: var(--color-light-accent);
+}
+
+.slide.isContain {
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .overlay {
