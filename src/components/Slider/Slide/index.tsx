@@ -15,7 +15,7 @@ export const Slide: React.FC<SlideProps> = ({ name, description, image, isContai
     return (
         <div
             className={classNames(styles.slide, {[styles.isContain]: isContainBackground})}
-            style={{ backgroundImage: `url(/images/${image})`}}
+            style={{ backgroundImage: `url(images/${image})`}}
         >
             <div className={styles.footer}>
                 <h3>{name}</h3>
