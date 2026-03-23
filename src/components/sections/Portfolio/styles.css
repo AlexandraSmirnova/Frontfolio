@@ -3,5 +3,5 @@
     flex-direction: column;
     background-color: var(--color-dark-accent);
     min-height: 650px;
-    padding-top: 60px;
+    padding-top: var(--section-padding);
 }

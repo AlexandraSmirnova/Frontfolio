@@ -88,6 +88,14 @@
 
 
 @media (max-width: 600px) {
+    .small {
+        font-size: var(--font-size-xxs);
+    }
+
+    .middle {
+        font-size: var(--font-size-xxs);
+    }
+
     .large {
         font-size: var(--font-size-xs);
     }

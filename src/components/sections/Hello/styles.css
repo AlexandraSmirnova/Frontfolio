@@ -76,6 +76,7 @@
 @media screen and (max-width: 600px) {
     .title {
         font-size: var(--font-size-s);
+        margin: 0 16px;
     }
 
     .innerContainer {

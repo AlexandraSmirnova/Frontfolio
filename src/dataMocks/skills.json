@@ -5,12 +5,12 @@
         { "name": "JS / TS", "level": 4 },
         { "name": "React", "level": 3 },
         { "name": "CSS3", "level": 3 },
-        { "name": "Eslint", "level": 2 },
+        { "name": "Node.js", "level": 2 },
         { "name": "HTML5", "level": 3 },
         { "name": "Git", "level": 2 },
         { "name": "Chrome DevTools", "level": 2 },
         { "name": "REST API", "level": 2 },
-        { "name": "Node.js", "level": 1 },
+        { "name": "Eslint", "level": 1 },
         { "name": "Redux", "level": 1 }
     ]
 }
