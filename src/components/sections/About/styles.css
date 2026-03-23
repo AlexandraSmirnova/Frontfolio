@@ -23,5 +23,16 @@
 .description {
     font-size: var(--font-size-s);
     padding-top: 20px;
-    margin-left: 45px;
+    margin-left: 34px;
 }
+
+@media screen and (max-width: 780px) {
+    .title {
+        font-size: var(--font-size-m);
+    }
+
+    .description {
+        font-size: var(--font-size-xs);
+    }
+}
+

@@ -6,12 +6,14 @@
     --color-light-accent: #fcfafc;
 
     --section-height: 750px;
+    --section-padding: 60px;
 
     --font-size-xl: 38px;
     --font-size-l: 32px;
     --font-size-m: 28px;
     --font-size-s: 24px;
     --font-size-xs: 16px;
+    --font-size-xxs: 10px;
 
     --z-index-30: 30;
     --z-index-20: 20;
