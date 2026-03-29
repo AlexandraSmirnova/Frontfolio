@@ -4,7 +4,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 
 const PUBLIC_PATH = path.resolve(__dirname, 'public');
 const SRC_PATH = path.resolve(__dirname, 'src');
-const BUILD_PATH = path.resolve(__dirname, 'build');
+const BUILD_PATH = path.resolve(__dirname, 'docs');
 
 module.exports = (env) => {
     const DEBUG = env.mode === 'development';
