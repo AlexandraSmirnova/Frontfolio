@@ -59,3 +59,9 @@
         --padding: 5%;
     }
 }
+
+@media (max-width: 600px) or (max-height: 400px) {
+    .sliderContainer {
+        padding: var(--section-padding-s) var(--padding);
+    }
+}
