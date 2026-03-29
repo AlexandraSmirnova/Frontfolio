@@ -1,6 +1,6 @@
 .container {
     background-color: var(--color-accent);
-    min-height: 530px;
+    min-height: var(--section-height-s);
     display: flex;
     align-items: center;
     padding: 80px 0;
@@ -26,13 +26,17 @@
     margin-left: 34px;
 }
 
-@media screen and (max-width: 780px) {
+@media (max-width: 780px) or (max-height: 400px) {
     .title {
         font-size: var(--font-size-m);
     }
 
     .description {
         font-size: var(--font-size-xs);
+    }
+
+    .container {
+        padding: var(--section-padding-s) 0;
     }
 }
 

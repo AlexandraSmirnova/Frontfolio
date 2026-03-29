@@ -5,8 +5,13 @@
     --color-dark-accent: #290239;
     --color-light-accent: #fcfafc;
 
-    --section-height: 750px;
+    --section-height-xl: 830px;
+    --section-height-l: 750px;
+    --section-height-m: 650px;
+    --section-height-s: 390px;
+    --section-height-xs: 300px;
     --section-padding: 60px;
+    --section-padding-s: 40px;
 
     --font-size-xl: 38px;
     --font-size-l: 32px;
