@@ -13,8 +13,8 @@
     background-color: transparent;
 }
 
-@media (max-width: 780px) or (max-height: 400px) {
+@media (max-width: 1032px) or (max-height: 400px) {
     .container {
-        height: var(--section-height-m);
+        height: var(--section-height-s);
     }
 }
