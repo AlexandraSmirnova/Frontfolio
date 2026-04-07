@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import classNames from 'classnames';
 
 import styles from './styles.css';
@@ -15,6 +15,8 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ visible }) => {
     const [isNavMenuOpen, setIsNavMenuOpen] = React.useState<boolean>(false);
+    const navbarMenuRef = useRef(null);
+
     const getHandleClick = (hash: string) => () => {
         window.location.hash = hash;
     };
@@ -27,19 +29,33 @@ export const Header: React.FC<HeaderProps> = ({ visible }) => {
         setIsNavMenuOpen(false);
     };
 
+    const handleClickOutside = (event: Event) => {
+        if (isNavMenuOpen && navbarMenuRef.current && !navbarMenuRef.current.contains(event.target)) {
+            handleCloseMenu();
+        }
+    };
+
     React.useEffect(() => {
         if (!visible && isNavMenuOpen) {
             setIsNavMenuOpen(false);
         }
     }, [visible]);
 
+    React.useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [isNavMenuOpen, handleClickOutside]);
+
     return (
         <div className={classNames(styles.container, { [styles.hidden]: !visible})}>
             <div className={styles.header}>
-                <div className={
-                    classNames(styles.tabs, {
+                <div
+                    className={classNames(styles.tabs, {
                         [styles.active]: isNavMenuOpen,
                     })}
+                    ref={navbarMenuRef}
                 >
                     <HeaderTab text="Навыки" onClick={getHandleClick('skills')}/>
                     <HeaderTab text="О&nbsp;себе" onClick={getHandleClick('about')}/>
@@ -48,7 +64,11 @@ export const Header: React.FC<HeaderProps> = ({ visible }) => {
                     <IconBox className={styles.crossIcon} onClick={handleCloseMenu} icon ={<Cross width="32" height="32"/>}/>
                 </div>
                 <ContactIconsBar className={styles.contacts} />
-                <IconBox className={styles.burgerButton} onClick={handleBurgerButtonClick} icon ={<BurgerMenu width="32" height="32"/>}/>
+                <IconBox
+                    className={styles.burgerButton}
+                    onClick={handleBurgerButtonClick}
+                    icon ={<BurgerMenu width="32" height="32"/>}
+                />
             </div>
         </div>
     );
