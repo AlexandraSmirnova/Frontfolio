@@ -55,13 +55,14 @@
     --width: 423px;
     --height: 612px;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     right: 10%;
     width: var(--width);
     height: var(--height);
     background-color: transparent;
     background-image: url('../../../images/front-photo.png');
     background-size: cover;
+    filter: drop-shadow(0 0 10px var(--color-dark-accent));
 }
 
 
