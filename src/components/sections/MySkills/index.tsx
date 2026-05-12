@@ -3,13 +3,13 @@ import React from 'react';
 import styles from './styles.css';
 import { Title } from '../../Title';
 import skillsJson from '../../../dataMocks/skills.json';
-import { SkillsBubbles } from '../../SkillsBubbles';
+import { SkillsConstellation } from '../../SkillsConstellation';
 
 export const MySkills: React.FC = () => {
     return (
         <section className={styles.container} id="skills">
             <Title text={'> Мои навыки'}/>
-            <SkillsBubbles skills={skillsJson.skills} />
+            <SkillsConstellation skills={skillsJson.skills} />
         </section>
     );
 };

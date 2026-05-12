@@ -30,7 +30,7 @@ export const Header: React.FC<HeaderProps> = ({ visible }) => {
     };
 
     const handleClickOutside = (event: Event) => {
-        if (isNavMenuOpen && navbarMenuRef.current && !navbarMenuRef.current.contains(event.target)) {
+        if (isNavMenuOpen && !navbarMenuRef?.current.contains(event.target)) {
             handleCloseMenu();
         }
     };
