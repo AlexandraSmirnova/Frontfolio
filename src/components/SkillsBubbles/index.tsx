@@ -17,6 +17,7 @@ const sizeByLevel: Record<number, SkillBubbleSize> = {
     4: 'xlarge'
 };
 
+/** deprecated component */
 export const SkillsBubbles: React.FC<SkillsBubblesProps> = ({ skills }) => {
     const emptyBubble = <SkillBubble size={'empty'} />;
     return (
