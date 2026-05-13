@@ -4,6 +4,7 @@
     border: 2px solid;
     text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -22,12 +23,11 @@
 }
 
 .big {
-    width: calc(var(--grid-cell) * 8);
-    height: calc(var(--grid-cell) * 8);
+    width: 200px;
+    height: 200px;
     font-size: var(--font-size-xs);
     z-index: var(--z-index-30);
 }
-
 
 .light {
     background-color: var(--color-light-accent);
@@ -39,6 +39,10 @@
     background-color: var(--color-secondary);
     color: var(--color-light-accent);
     border-color: var(--color-light-secondary);
+}
+
+.description {
+    font-size: var(--font-size-xxs);
 }
 
 @media (max-width: 1032px) {

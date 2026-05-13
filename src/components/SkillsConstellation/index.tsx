@@ -31,12 +31,13 @@ export const SkillsConstellation: React.FC<SkillsConstellationProps> = ({ skills
     return (
         <div className={styles.container} ref={containerRef}>
             <canvas id="connections" ref={canvasRef}></canvas>
-            {skills.map(({ name }, i) => {
+            {skills.map(({ name, desc }, i) => {
                 return (
                     <React.Fragment key={`${name}-${i}`}>
                         <SkillPoint
                             variant={i % 2 === 0 ? 'dark' : 'light'}
                             text={name}
+                            description={desc}
                             id={`${name}-${1}`}
                             ref={(el) => {
                                 wordRefs.current[i] = el;

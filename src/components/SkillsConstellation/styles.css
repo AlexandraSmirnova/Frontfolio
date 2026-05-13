@@ -14,7 +14,7 @@ canvas {
     top: 0;
     left: 0;
     pointer-events: none;
-}
+}x
 
 @media (min-width: 600px) and (max-width: 1032px) {
     :root {
