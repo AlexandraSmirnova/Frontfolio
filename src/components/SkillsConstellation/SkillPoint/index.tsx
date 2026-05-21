@@ -8,16 +8,13 @@ interface SkillPointProps extends React.HTMLProps<HTMLDivElement> {
     className?: string;
     variant?: SkillPointVariant;
     text?: string;
+    description?: string;
     ref: (el: HTMLElement) => void;
 }
 
 export type SkillPointVariant = 'dark' | 'light';
-export type SkillPointSize = 'big' | 'small';
 
-
-
-
-export const SkillPoint = forwardRef<HTMLDivElement, SkillPointProps>(({ text, variant = 'dark', ...props}, ref) => {
+export const SkillPoint = forwardRef<HTMLDivElement, SkillPointProps>(({ text, description, variant = 'dark', ...props}, ref) => {
     const [isExpanded, setIsExpanded] = useState<boolean>(false);
     const localRef = useRef<HTMLDivElement>(null);
     useImperativeHandle(ref, () => localRef.current!);
@@ -47,6 +44,7 @@ export const SkillPoint = forwardRef<HTMLDivElement, SkillPointProps>(({ text, v
             {...props}
         >
             {text}
+            {description && isExpanded && <div className={styles.description} style={{ whiteSpace: 'pre-wrap' }}>{description}</div>}
         </div>
     );
 });
