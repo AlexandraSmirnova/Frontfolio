@@ -44,7 +44,7 @@ export const SkillPoint = forwardRef<HTMLDivElement, SkillPointProps>(({ text, d
             {...props}
         >
             {text}
-            {description && isExpanded && <div className={styles.description}>{description}</div>}
+            {description && isExpanded && <div className={styles.description} style={{ whiteSpace: 'pre-wrap' }}>{description}</div>}
         </div>
     );
 });

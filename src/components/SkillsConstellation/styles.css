@@ -1,11 +1,10 @@
 :root {
-    --grid-cell: 20px;
+    --grid-cell: 25px;
 }
 .container {
     position: relative;
     width: 80%;
     height: 400px;
-    /* overflow: hidden; */
     margin: var(--section-padding) auto;
 }
 

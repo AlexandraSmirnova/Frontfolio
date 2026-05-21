@@ -37,7 +37,7 @@ export const SkillsConstellation: React.FC<SkillsConstellationProps> = ({ skills
                         <SkillPoint
                             variant={i % 2 === 0 ? 'dark' : 'light'}
                             text={name}
-                            description={desc}
+                            description={desc.replace(/\\n/g, '\n')}
                             id={`${name}-${1}`}
                             ref={(el) => {
                                 wordRefs.current[i] = el;
