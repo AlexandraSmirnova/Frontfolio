@@ -6,7 +6,7 @@ import { HeaderTab } from '../HeaderTab';
 import { ContactIconsBar } from '../ContactIconsBar';
 import { IconBox } from '../IconBox';
 import BurgerMenu from '../../images/svg/burger-menu.svg';
-import Cross from '../../images/svg/cross.svg';
+import { CloseButton } from '../CloseButton';
 
 
 interface HeaderProps {
@@ -41,6 +41,7 @@ export const Header: React.FC<HeaderProps> = ({ visible }) => {
         }
     }, [visible]);
 
+    // TODO: вынести в хук
     React.useEffect(() => {
         document.addEventListener('mousedown', handleClickOutside);
         return () => {
@@ -61,7 +62,7 @@ export const Header: React.FC<HeaderProps> = ({ visible }) => {
                     <HeaderTab text="О&nbsp;себе" onClick={getHandleClick('about')}/>
                     <HeaderTab text="Портфолио" onClick={getHandleClick('portfolio')}/>
                     <HeaderTab text="Контакты" onClick={getHandleClick('contacts')}/>
-                    <IconBox className={styles.crossIcon} onClick={handleCloseMenu} icon ={<Cross width="32" height="32"/>}/>
+                    <CloseButton className={styles.crossIcon} onClick={handleCloseMenu} />
                 </div>
                 <ContactIconsBar className={styles.contacts} />
                 <IconBox

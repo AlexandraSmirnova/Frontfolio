@@ -7,6 +7,11 @@
     margin: auto;
 }
 
+.sliderContainer button {
+    width: 32px;
+    height: 32px;
+}
+
 .dots {
     position: absolute;
     bottom: -10px;
@@ -39,11 +44,11 @@
 }
 
 .dots li button:hover {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .dots :global(li.slick-active) button {
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
 
 :global(.slick-list) {
@@ -53,6 +58,25 @@
 :global(.slick-slide) {
     padding: 0 10px;
 }
+
+:global(.slick-next) {
+    right: -4vw;
+}
+
+:global(.slick-prev) {
+    left: -4vw;
+}
+
+:global(.slick-arrow:before) {
+    font-size: 28px;
+    opacity: 1;
+}
+
+:global(.slick-arrow:hover) {
+    opacity: 0.7;
+}
+
+
 
 @media screen and (max-width: 1280px) {
     .sliderContainer {
