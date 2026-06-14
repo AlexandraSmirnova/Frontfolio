@@ -2,9 +2,9 @@
     "skills": [
         { "name": "Figma", "level": 1, "desc": "Основной инструмент для работы с макетами от дизайнеров. Так же есть опыт создания собственных макетов."},
         { "name": "Webpack", "level": 1, "desc": "Основной сборщик приложений, легко соберет и оптимизирует файлики вашего приложения"},
-        { "name": "JS / TS", "level": 4, "desc": "*Здесь могла быть шутка про Java* :) В основном использую TS, работа с типизацией прекрасна"},
+        { "name": "JS / TS", "level": 4, "desc": "*Здесь могла быть шутка про Java, но это другой ЯП* :) В основном использую TS, работа с типизацией прекрасна"},
         { "name": "React", "level": 3, "desc": "Где-то в далеком 2017-ом, узнав про React, я решила стать фронтенд-разработчиком <з"},
-        { "name": "CSS", "level": 3, "desc": ".my-professional-css {\\nstress-level: none;\\nbugs-count: hidden;\\ncode-quality: perfect;\\noverflow: visible;\\ncontent: \"Senior Inside\"\\n}"},
+        { "name": "CSS", "level": 3, "desc": ".my-professional-css {\\n--stress-level: none;\\n--bugs-count: hidden;\\n--code-quality: perfect;\\noverflow: visible;\\ncontent: \"Senior Inside\"\\n}"},
         { "name": "Node.js", "level": 2, "desc": "Когда бэкендер в отпуске, Node.js - незаменим"},
         { "name": "HTML", "level": 3, "desc": "<p>Блок текста про\\n<i>HTML</i></p>"},
         { "name": "Git", "level": 2, "desc": "Найду тот самый коммит, что занес баг"},

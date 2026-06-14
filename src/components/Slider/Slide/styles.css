@@ -9,6 +9,8 @@
     border-radius: 22px;
     overflow: hidden;
     color: var(--color-light-accent);
+    box-shadow: var(--base-box-shadow);
+    cursor: pointer;
 }
 
 .slide.isContain {
